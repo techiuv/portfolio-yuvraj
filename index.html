@@ -1,1 +1,165 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio of Yuvraj showcasing artworks, projects, and contact information.">
+    <meta name="author" content="Yuvraj">
+    <meta name="keywords" content="Yuvraj, portfolio, artist, artwork, projects, contact">
+
+    <title>Portfolio - Yuvraj</title>
+    
+    <link rel="shortcut icon" href="assets/favicon/20240804_211025.jpg" type="image/x-icon">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    
+</head>
+<body>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand mx-3 mx-md-0 cursor-pointer" onclick="window.location.reload();">Yuvraj<span class="dot">.</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <i class="bi bi-list"></i>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-around justify-content-md-between">
+                    <ul class="navbar-nav ms-auto d-flex gap-3 flex-row nav_ul">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Work</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">yuv</h5> -->
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto d-flex flex-column  nav-md ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <main>
+        <section class="position-relative h-auto w-100 d-flex flex-column flex-md-row justify-content-center align-content-center gap-md-3 flex-md-row-reverse" id="home">
+            <div class="pic-container">
+                <img src="assets/img/1000006462-removebg-preview (1).png" alt="" class="img-fluid pic">
+            </div>
+            
+            <div class="home-data">
+                <h5>Hello There</h5>
+                <h3 class="">I am Yuvraj</h3>
+                <h5>I am a <span id="element"></span></h5>
+                <p>Professional artist blending creativity and tech, skilled in coding and diverse mediums like charcoal and oil.</p>
+                
+                
+                <ul class="d-flex gap-2 gap-lg-4 list-unstyled social-links">
+                    
+                    <li>
+                        <a href="https://www.instagram.com/@artistyuvraj_/" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/yuvraj1703" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
+                    </li>
+                    <li>
+                        <a href="https://www.threads.net/@artistyuvraj_" target="_blank" rel="noopener"><i class="bi bi-threads"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="about">
+            <h3 class="text-center heading">About Me</h3>
+            
+            <p class="para">I am a professional artist with a diverse skill set in both the arts and technology. With expertise in HTML, CSS, JavaScript, Bootstrap, Python and C I seamlessly blend creativity and technical proficiency. My artistic talents shine through in works created with charcoal, acrylic, and oil, showcasing a deep understanding of various mediums. Whether crafting digital experiences or creating captivating artworks, I bring a unique and versatile approach to my work.</p>
+        </section>
+        
+        <section id="work">
+            <p class="para">My Portfolio</p>
+            <h3 class="text-center heading">Recent Works</h3>
+            <div class="d-flex align-content-around justify-content-center mx-auto flex-column flex-md-row work-container">
+                <div class="box">
+                    <img src="assets/img/artpreview.jpeg" class="img-fluid img" alt="">
+                    <p class="work-para">View my Exoitic art collection. </p>
+                    <a href="https://www.instagram.com/@artistyuvraj_/" target="_blank" rel="noopener" class="redirect-a">wanna see <i class="bi bi-arrow-right"></i></a>
+                </div>
+                
+                <div class="mx-auto box">
+                    <img src="assets/img/codingpreview.jpg" class="img-fluid img" alt="">
+                    <p class="work-para">Some of my web projects. </p>
+                    <a href="https://github.com/yuvraj1703?tab=repositories" target="_blank" rel="noopener" class="redirect-a">wanna see <i class="bi bi-arrow-right"></i></a>
+                </div>
+                
+            </div>
+            
+        </section>
+        
+        <section id="contact">
+            <p class="para">Get in Touch</p>
+            <h3 class=" text-center heading">Contact Me</h3>
+            
+            <div class="mx-auto d-flex flex-column justify-content-center align-content-center py-2 -py-md-6 mail-box">
+                <i class="bi bi-envelope-check"></i>
+                <p class="para">artistyuvraj1703@gmail.com </p>
+                <a href="mailto:artistyuvraj1703@gmail.com" target="_blank" class="cursor-pointer mail">Write Me <i class="bi bi-arrow-right"></i></a>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="d-flex flex-column w-100 pt-2 pt-md-4 ">
+        
+       
+        
+        <div class=" bg-s w-100">
+            <p id="year"></p>
+        </div>
+        
+    </footer>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+</html>
 
