@@ -21,14 +21,14 @@
 </head>
 <body>
     
-    <header>
-        <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
-                <a class="navbar-brand mx-3 mx-md-0 cursor-pointer" onclick="window.location.reload();">Yuvraj<span class="dot">.</span></a>
+    <header class="fixed-top z-2">
+        <nav class="navbar navbar-expand-lg py-lg-2">
+            <div class="container-fluid justify-content-lg-around">
+                <a href="#" class="navbar-a mx-3 mx-md-0 cursor-pointer text-decoration-none" onclick="window.location.reload()">Hello There.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <i class="bi bi-list"></i>
                 </button>
-                <div class="collapse navbar-collapse d-lg-flex justify-content-lg-around justify-content-md-between">
+                <div class="nav_lg  ">
                     <ul class="navbar-nav ms-auto d-flex gap-3 flex-row nav_ul">
                         <li class="nav-item">
                             <a class="nav-link" href="#home">Home</a>
@@ -47,10 +47,10 @@
             </div>
         </nav>
         
-        <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas offcanvas-top " tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
             <div class="offcanvas-header">
                 <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">yuv</h5> -->
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" class="bg-transparent border-0 " data-bs-dismiss="offcanvas" aria-label="Close" id="btn-close"><i class="bi bi-x-lg"></i></button>
             </div>
             <div class="offcanvas-body">
                 <ul class="navbar-nav ms-auto d-flex flex-column  nav-md ">
@@ -72,31 +72,49 @@
     </header>
     
     <main>
-        <section class="position-relative h-auto w-100 d-flex flex-column flex-md-row justify-content-center align-content-center gap-md-3 flex-md-row-reverse" id="home">
-            <div class="pic-container">
-                <img src="assets/img/1000006462-removebg-preview (1).png" alt="" class="img-fluid pic">
-            </div>
+        
+        
+        <section class="position-relative  w-100 d-flex justify-content-center align-content-center  " id="home">
             
-            <div class="home-data">
-                <h5>Hello There</h5>
-                <h3 class="">I am Yuvraj</h3>
-                <h5><span id="element"></span></h5>
-                <p>Professional artist blending creativity and tech, skilled in coding and diverse mediums like charcoal and oil.</p>
-                
-                
-                <ul class="d-flex gap-2 gap-lg-4 list-unstyled social-links">
+            <div class="d-flex justify-content-center align-content-center flex-column-reverse gap-2 gap-md-4 flex-md-row-reverse py-2">
+                <div class="">
+                    <img src="assets/img/d28cbcd0-c15a-4af3-b31c-a25efb9113c5.jpg" alt="" class="img-fluid pic ">
+                </div>
+                <div class="home-data h-0 ">
+                    <h5>It's Me</h5>
+                    <h3>Yuvraj</h3>
+                    <h5>I am a <span id="element"></span></h5>
                     
-                    <li>
-                        <a href="https://www.instagram.com/artistyuvraj_?igsh=MW0wOGpsbm40eXJkbQ==" target="_blank" rel="noopener"><i class="bi bi-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/yuvraj1703" target="_blank" rel="noopener"><i class="bi bi-github"></i></a>
-                    </li>
-                    <li>
-                        <a href="https://www.threads.net/@artistyuvraj_" target="_blank" rel="noopener"><i class="bi bi-threads"></i></a>
-                    </li>
-                </ul>
-            </div>
+                    <p>Professional artist blending creativity and tech, skilled in coding and diverse mediums like charcoal and oil.</p>
+                    
+                    <ul class="d-flex align-content-center gap-2 gap-md-4 list-unstyled mx-auto mx-md-0 my-1 my-md-4 social-links">
+                        <li>
+                            <a href="https://www.instagram.com/artistyuvraj_?igsh=MTdncGFscWtwYXFqag==" target="_blank " rel="noopener">
+                                <i class="bi bi-instagram"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/yuvraj1703" target="_blank " rel="noopener">
+                                <i class="bi bi-github"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.threads.net/@artistyuvraj_" target="_blank " rel="noopener">
+                                <i class="bi bi-threads"></i>
+                            </a>
+                        </li>
+                        
+                    </ul>
+                    
+                 <!--    <button class="d-flex align-content-center  py-2 px-md-4 px-2 border-0 my-2 my-md-4 cursor-pointer mx-auto mx-md-0 home-btn " type="button">
+                        <a href="#about" class="text-decoration-none mx-auto">About</a>
+                    </button>
+ -->
+    
+                    
+                </div>
+            </div>           
+                   
         </section>
         
         <section id="about">
@@ -112,7 +130,7 @@
                 <div class="box">
                     <img src="assets/img/artpreview.jpeg" class="img-fluid img" alt="">
                     <p class="work-para">View my Exoitic art collection. </p>
-                    <a href="https://www.instagram.com/artistyuvraj_?igsh=MW0wOGpsbm40eXJkbQ==" target="_blank" rel="noopener" class="redirect-a">wanna see <i class="bi bi-arrow-right"></i></a>
+                    <a href="https://www.instagram.com/artistyuvraj_?igsh=MTdncGFscWtwYXFqag==" target="_blank" rel="noopener" class="redirect-a">wanna see <i class="bi bi-arrow-right"></i></a>
                 </div>
                 
                 <div class="mx-auto box">
@@ -129,11 +147,22 @@
             <p class="para">Get in Touch</p>
             <h3 class=" text-center heading">Contact Me</h3>
             
-            <div class="mx-auto d-flex flex-column justify-content-center align-content-center py-2 -py-md-6 mail-box">
+            <div class="my-3 mx-auto">
+                <form name="contact" method="POST" data-netlify="true" class="d-flex flex-column justify-content-center align-content-center py-3 px-3 gap-2 py-md-5 px-md-5 gap-md-4 mx-auto" >
+                    <input type="text" name="name" id="name" placeholder="Name" required>
+                    <input type="email" name="email" id="email" placeholder="E-Mail" required>
+                    <textarea placeholder="Your Message" rows="4" required>
+                        
+                    </textarea>
+                    <input type="submit" value="Send" class="my-2">
+                </form>
+            </div>
+            
+            <!-- <div class="mx-auto d-flex flex-column justify-content-center align-content-center py-2 -py-md-6 mail-box">
                 <i class="bi bi-envelope-check"></i>
                 <p class="para">artistyuvraj1703@gmail.com </p>
                 <a href="mailto:artistyuvraj1703@gmail.com" target="_blank" class="cursor-pointer mail">Write Me <i class="bi bi-arrow-right"></i></a>
-            </div>
+            </div> -->
         </section>
     </main>
     
@@ -147,7 +176,10 @@
         
     </footer>
     
-    
+   
+<!-- Include the SplitText plugin (self-hosted after downloading from GreenSock) -->
+
+
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -155,11 +187,9 @@
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 </html>
-
