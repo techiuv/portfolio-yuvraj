@@ -454,7 +454,7 @@ input[type="submit"]:hover {
     }
     
     form input,
-    textarea ,
+    form textarea ,
     input[type="submit"]{
         font-size:  3.5vw;
     }   
