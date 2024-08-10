@@ -148,7 +148,7 @@
             <h3 class=" text-center heading">Contact Me</h3>
             
             <div class="my-3 mx-auto">
-                <form name="contact" method="POST" data-netlify="true" class="d-flex flex-column justify-content-center align-content-center py-3 px-3 gap-2 py-md-5 px-md-5 gap-md-4 mx-auto" >
+                <form name="contact" method="POST" onsubmit="doPost()"  class="d-flex flex-column justify-content-center align-content-center py-3 px-3 gap-2 py-md-5 px-md-5 gap-md-4 mx-auto" >
                     <input type="text" name="name" id="name" placeholder="Name" required>
                     <input type="email" name="email" id="email" placeholder="E-Mail" required>
                     <textarea placeholder="Your Message" rows="4" required>
