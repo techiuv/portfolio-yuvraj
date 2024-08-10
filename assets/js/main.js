@@ -34,6 +34,23 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById('year').innerHTML = '&copy;' + new Date().getFullYear() + '. All rights reserved.';
+function doPost(e) {
+  e.preventDefault();
+  var sheet = SpreadsheetApp.openById('1yE0MHCfSd9vkWR1HfTH6gw-Zth633n6CR_bx2t3wm2A').getActiveSheet();
+  var data = e.parameter;
+  var row = [];
+
+  // Get form data and push it to the row array
+  row.push(data['name']); // Replace 'name' with your form field names
+  row.push(data['email']);
+  row.push(data['message']);
+
+  // Append the data to the sheet
+  sheet.appendRow(row);
+
+  // Return a success message
+  return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
+}
 
 
 gsap.from(".pic, #home h3,#home h3 span, #home h5, #home p, .social-links", {
