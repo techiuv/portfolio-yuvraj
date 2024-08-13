@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed('#element', {
-        strings: ['Professional Artist', 'Web Developer','Art Mentor'],
+        strings: ['Professional Artist', 'Web Developer','Art Mentor','YouTuber'],
         typeSpeed: 50,
         loop: true
     }); 
@@ -33,47 +33,99 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.getElementById('year').innerHTML = '&copy;' + new Date().getFullYear() + '. All rights reserved.';
-function doPost(e) {
-  e.preventDefault();
-  var sheet = SpreadsheetApp.openById('1yE0MHCfSd9vkWR1HfTH6gw-Zth633n6CR_bx2t3wm2A').getActiveSheet();
-  var data = e.parameter;
-  var row = [];
+document.getElementById('year').innerHTML = '&copy; portfolio yuvraj ' + new Date().getFullYear() + '. All rights reserved.';
 
-  // Get form data and push it to the row array
-  row.push(data['name']); // Replace 'name' with your form field names
-  row.push(data['email']);
-  row.push(data['message']);
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
 
-  // Append the data to the sheet
-  sheet.appendRow(row);
+    const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5 // Adjust this value as needed
+    };
 
-  // Return a success message
-  return ContentService.createTextOutput("Success").setMimeType(ContentService.MimeType.TEXT);
-}
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Remove 'active' class from all links
+                navLinks.forEach(link => link.parentElement.classList.remove('active'));
 
+                // Add 'active' class to the corresponding nav link
+                const activeLink = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+                activeLink.parentElement.classList.add('active');
+            }
+        });
+    }, observerOptions);
 
-gsap.from(".pic, #home h3,#home h3 span, #home h5, #home p, .social-links", {
-    y:20,
-    opacity: 0,
-    duration: .5,
-    stagger:.3    
+    sections.forEach(section => {
+        observer.observe(section);
+    });
 });
 
-gsap.from("#about h3, #about p", {
-    opacity: 0,
+let tl = gsap.timeline();
+
+tl.from(".loader p, .loader p span", { 
+    x: 120,
+    opacity:0,
+    stagger:.3,
+    duration: 1,
+
+}); 
+
+tl.to(".loader p, .loader p span", { 
+    x: -120,
+    opacity:0,
+    stagger:.3,
+    duration: 1,
+
+}); 
+
+tl.to(".loader", { 
+    
+    opacity:0,
+    
+    duration: .3,
+
+}); 
+
+
+tl.to(".loader", {  
+    display: "none",
+    duration: .1,
+
+});  
+
+tl.from("#home h3, #home h3 span, #home h5, .pic, #home p, .social-links", { 
+    y: 5,
+   // scale:0,
+    opacity:0,
+   // stagger:.3,
+    duration: .5,
+
+}); 
+
+tl.from(".social-links li a", {
+        y: 20,
+        scale: 0,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.3
+    });
+
+
+gsap.from(" #about p", {    
     y: 10,
+    opacity: 0,
     stagger:.5,
     duration: .5,
     scrollTrigger: {
         trigger: "#about",
-        start: "top 80%", 
-        
-        
+        start: "top 80%",                 
     }
 }); 
 
-// Assuming you have included the SplitText plugin
+
 gsap.fromTo("#about h3 ", 
     {
         clipPath: "inset(100% 0% 0% 0%)" // Starts with the element fully hidden from the bottom
@@ -90,12 +142,24 @@ gsap.fromTo("#about h3 ",
     }
 );
 
+gsap.from(" .exp-box", {
+    opacity: 0,
+    y: 20,
+    stagger:.8,
+    duration: .5,
+    scrollTrigger: {
+        trigger: "#about",
+        start: "top 50%",                 
+    }
+}); 
 
-gsap.from("#work h3, #work p", {
+
+
+gsap.from("#work h3 ,#work p", {
     opacity: 0,
     y: 10,
     stagger:.5,
-    duration: 1,
+    duration: .5,
     scrollTrigger: {
         trigger: "#work",
         start: "top 80%", 
@@ -103,13 +167,30 @@ gsap.from("#work h3, #work p", {
         
     }
 });
+
+gsap.fromTo("#work h3 ", 
+    {
+        clipPath: "inset(100% 0% 0% 0%)" // Starts with the element fully hidden from the bottom
+    }, 
+    {
+        clipPath: "inset(0% 0% 0% 0%)", // Ends with the element fully visible
+        opacity: 1, 
+        duration: .5,
+        scrollTrigger: {
+            trigger: "#work",
+            start: "top 80%", 
+            toggleActions: "play none none none"
+        }
+    }
+);
+
 
 gsap.from(".box", {
     y: 50,
     opacity:0,
     //scale:0,
     duration: 1,
-    stagger:1,
+    stagger: .8,
     scrollTrigger: {
         trigger: "#work",
         start: "top 80%", 
@@ -118,7 +199,7 @@ gsap.from(".box", {
     }
 });
 
-gsap.from("#contact h3, #contact p", {
+gsap.from("#contact p", {
     opacity: 0,
     y: 10,
     stagger:.5,
@@ -130,18 +211,19 @@ gsap.from("#contact h3, #contact p", {
     }
 });
 
-
-gsap.from("form", {
-    opacity: 0,
-    y: 10,
-   // flip:180,
-    stagger: .5,
-    duration: 1,
-    scrollTrigger: {
-        trigger: "#contact",
-        start: "top 80%", 
-
+gsap.fromTo("#contact h3 ", 
+    {
+        clipPath: "inset(100% 0% 0% 0%)" // Starts with the element fully hidden from the bottom
+    }, 
+    {
+        clipPath: "inset(0% 0% 0% 0%)", // Ends with the element fully visible
+        opacity: 1, 
+        duration: .5,
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 80%", 
+            toggleActions: "play none none none"
+        }
     }
-});
-
+);
 
