@@ -1,4 +1,20 @@
-# Responsive Portfolio
+# My Responsive Portfolio
 
-Welcome to my responsive portfolio! This project showcases my work, skills, and contact information in a beautifully designed, responsive website.
+Welcome to my personal portfolio! This project is a showcase of my work and skills, featuring a responsive design, smooth animations, and redirect links.
 
+## Visit the Website
+
+You can visit the portfolio website [here](https://portfolioyuv.netlify.app/).
+
+## Contact
+
+If you have any questions, feel free to contact me at [artistyuvraj1703@gmail.com](mailto:artistyuvraj1703@gmail.com).
+
+You can also find me on:
+
+- [Instagram](https://instagram.com/artistyuvraj_)
+- [GitHub](https://github.com/yuvraj1703)
+
+---
+
+Thank you for visiting my portfolio!
