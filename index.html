@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Yuvraj showcasing artworks, projects, and contact information.">
+    <meta name="description" content="I am a professional artist with a diverse skill set in both the arts and technology. With expertise in HTML, CSS, JavaScript, Bootstrap, Python and C I seamlessly blend creativity and technical proficiency. My artistic talents shine through in works created with charcoal, acrylic, and oil, showcasing a deep understanding of various mediums. Whether crafting digital experiences or creating captivating artworks, I bring a unique and versatile approach to my work.">
     <meta name="author" content="Yuvraj">
-    <meta name="keywords" content="Yuvraj, portfolio, artist, artwork, projects, contact">
+    <meta name="keywords" content="Yuvraj, portfolio, artist, artwork, projects, contact, portfolio yuvraj, portfolio yuvraj">
 
     <title>Portfolio - Yuvraj</title>
     
@@ -14,12 +14,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
-    
+   
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     
 </head>
 <body>
+    
+    <div class=" justify-content-center  align-content-center loader">
+        <p class="fs-4 fs-md-3  fs-lg-2 fs-xl-1 ">Portfolio <span>Yuvraj </span><span style="color: var(--primary-color);">.</span></p>
+    </div>
     
     <header class="fixed-top z-2">
         <nav class="navbar navbar-expand-lg py-lg-2">
@@ -31,16 +34,16 @@
                 <div class="nav_lg  ">
                     <ul class="navbar-nav ms-auto d-flex gap-3 flex-row nav_ul">
                         <li class="nav-item">
-                            <a class="nav-link" href="#home">Home</a>
+                            <a class="nav-link nav-larger" href="#home">Home</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                        <li class="nav-item nav-larger">
+                            <a class="nav-link nav-larger" href="#about">About</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item nav-larger">
                             <a class="nav-link" href="#work">Work</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact">Contact</a>
+                            <a class="nav-link nav-larger" href="#contact">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -117,13 +120,42 @@
                    
         </section>
         
-        <section id="about">
+        <section id="about" class="py-5">
             <h3 class="text-center heading">About Me</h3>
             
             <p class="para">I am a professional artist with a diverse skill set in both the arts and technology. With expertise in HTML, CSS, JavaScript, Bootstrap, Python and C I seamlessly blend creativity and technical proficiency. My artistic talents shine through in works created with charcoal, acrylic, and oil, showcasing a deep understanding of various mediums. Whether crafting digital experiences or creating captivating artworks, I bring a unique and versatile approach to my work.</p>
+            
+            <p class="para mt-5 mt-md-6">My skills</p>
+            <h3 class="heading text-center ">Experience</h3>
+            
+            
+          
+         <div class="container exp-parent-box">
+    <div class="row">
+        <div class="col exp-box">
+            <i class="icon bi bi-code-slash"></i>
+            <h5 class="skill-name">Coding Skills</h5>
+            <p class="skill-para">I am a versatile coder with experience in HTML, CSS, JavaScript, Python, and C. My skills span from crafting responsive websites to solving complex back-end challenges. I bring creative ideas to life through clean, efficient code, always striving to create seamless and engaging digital experiences.</p>
+        </div>
+        <div class="col exp-box">
+            <i class="icon bi bi-camera-reels"></i>
+            <h5 class="skill-name">YouTube Skills</h5>
+            <p class="skill-para">I am a skilled YouTube content creator, adept at producing engaging and educational videos. My expertise includes video editing, scripting, and optimizing content for search. I excel at transforming complex topics into clear, compelling stories that resonate with viewers and enhance their learning experience.</p>
+        </div>
+        <div class="col exp-box">
+            <i class="icon bi bi-palette"></i>
+            <h5 class="skill-name">Art Skills</h5>
+            <p class="skill-para">I am a talented artist with expertise in charcoal, acrylic, and oil mediums. My work blends technical precision with creative expression, capturing deep emotions and complex concepts. I aim to push artistic boundaries, creating pieces that evoke strong emotional responses and connect with viewers on a profound level.</p>
+        </div>
+    </div>
+</div>
+
+
         </section>
         
-        <section id="work">
+        
+        
+        <section id="work" class="pt-5">
             <p class="para">My Portfolio</p>
             <h3 class="text-center heading">Recent Works</h3>
             <div class="d-flex align-content-around justify-content-center mx-auto flex-column flex-md-row work-container">
@@ -139,6 +171,12 @@
                     <a href="https://github.com/yuvraj1703?tab=repositories" target="_blank" rel="noopener" class="redirect-a">wanna see <i class="bi bi-arrow-right"></i></a>
                 </div>
                 
+          <!--       <div class="mx-auto box">
+                    <img src="assets/img/codingpreview.jpg" class="img-fluid img" alt="">
+                    <p class="work-para">Some of my web projects. </p>
+                    <a href="https://github.com/yuvraj1703?tab=repositories" target="_blank" rel="noopener" class="redirect-a">wanna see <i class="bi bi-arrow-right"></i></a>
+                </div>
+                 -->
             </div>
             
         </section>
@@ -147,22 +185,19 @@
             <p class="para">Get in Touch</p>
             <h3 class=" text-center heading">Contact Me</h3>
             
-            <div class="my-3 mx-auto">
-                <form name="contact" method="POST" data-netlify="true" class="d-flex flex-column justify-content-center align-content-center py-3 px-3 gap-2 py-md-5 px-md-5 gap-md-4 mx-auto" >
-                    <input type="text" name="name" id="name" placeholder="Name" required>
-                    <input type="email" name="email" id="email" placeholder="E-Mail" required>
-                    <textarea placeholder="Your Message" rows="4" required>
-                        
-                    </textarea>
-                    <input type="submit" value="Send" class="my-2">
-                </form>
-            </div>
-            
-            <!-- <div class="mx-auto d-flex flex-column justify-content-center align-content-center py-2 -py-md-6 mail-box">
+                        <div class="mx-auto d-flex flex-column justify-content-center align-content-center py-2 -py-md-6 mail-box">
                 <i class="bi bi-envelope-check"></i>
                 <p class="para">artistyuvraj1703@gmail.com </p>
                 <a href="mailto:artistyuvraj1703@gmail.com" target="_blank" class="cursor-pointer mail">Write Me <i class="bi bi-arrow-right"></i></a>
-            </div> -->
+            </div>
+            
+            <div class="mx-auto d-flex flex-column justify-content-center align-content-center py-2 -py-md-6 mt-3 mt-md-4 mail-box">
+                <i class="bi bi-instagram"></i>
+                <p class="para">
+                    @artistyuvraj </p>
+                <a href="https://www.instagram.com/artistyuvraj_?igsh=MTdncGFscWtwYXFqag==" target="_blank" class="cursor-pointer mail">Dm Me <i class="bi bi-arrow-right"></i></a>
+            </div>
+            
         </section>
     </main>
     
@@ -170,15 +205,11 @@
         
        
         
-        <div class=" bg-s w-100">
-            <p id="year"></p>
+        <div class="text-center bg-s w-100">
+            <p class="text-center mx-auto" id="year"></p>
         </div>
         
     </footer>
-    
-   
-<!-- Include the SplitText plugin (self-hosted after downloading from GreenSock) -->
-
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
 
@@ -190,6 +221,6 @@
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/custom.js"></script>
+    
 </body>
 </html>
