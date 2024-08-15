@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var typed = new Typed('#element', {
-        strings: ['Professional Artist', 'Web Developer','Art Mentor','YouTuber'],
+        strings: ['Professional Artist', 'Web Developer'],
         typeSpeed: 50,
         loop: true
     }); 
