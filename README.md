@@ -5,7 +5,7 @@ Welcome to my personal portfolio! This project is a showcase of my work and skil
 ## Visit the Website
 
 You can visit the portfolio website [here](https://portfolioyuv.netlify.app/).
-<img src="/Yuvraj_Portfolio.jpg">
+<img src="/Portfolio_Yuvraj.jpg">
 
 ## Contact
 
