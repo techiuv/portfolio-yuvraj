@@ -91,10 +91,6 @@ body {
     
 }
 
-main{   
-    margin-top:  8vh;
-}
-
 .nav_ul li::before {
     position:  absolute;
     content: "";
@@ -141,8 +137,17 @@ section {
     position:  relative;
 }
 
-#home{
-    /* min-height:  100vh; */
+
+main{   
+    margin-top:  8vh;
+}
+
+p{
+    font-weight: var(--font-normal);
+}
+
+.typed-cursor{
+    color:  var(--primary-color);
 }
 
 #home div {
@@ -468,23 +473,21 @@ section {
     }
        
     .home-data h5,
-    .skill-name {
+    .skill-name,
+    .home-data  h3 {
         font-size:  6vw;
         
     }
 
-    .home-data  h3{
-        
-        font-size:  8vw;
-    }
-    
-    .home-data p,
+  .home-data p,
     .mail-box a,
     .mail-box a i ,
     .home-btn a{
-        font-size:  3vw;
-        text-align: center;
+        font-size:  .825rem;
+        text-align: left;
     }
+    
+    
     
     .social-links li{
         width: 8.5vw;
@@ -499,7 +502,7 @@ section {
     }
     
     .heading{
-        font-size:  6vw;
+        font-size:  1.5rem;
     }
     
     
@@ -508,7 +511,7 @@ section {
     .para,
      .redirect-a,
      #year {
-        font-size:  3vw;
+        font-size:  .925rem;
         width:  90%;
     }
     
